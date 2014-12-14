@@ -18,6 +18,8 @@
 -include vendor/rockchip/rk3368/BoardConfigVendor.mk
 -include device/rockchip/common/BoardConfig.mk
 
+TARGET_PREBUILT_KERNEL := kernel/arch/arm64/boot/Image
+
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
