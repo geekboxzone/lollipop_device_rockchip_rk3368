@@ -29,6 +29,9 @@ PRODUCT_PACKAGES += \
 #TARGET_USERIMAGES_USE_F2FS := true
 #endif
 
+PRODUCT_COPY_FILES += \
+    device/rockchip/rk3368/init.rc:root/init.rc
+
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
