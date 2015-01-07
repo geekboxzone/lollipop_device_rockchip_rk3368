@@ -41,5 +41,5 @@ ro.product.usbfactory=rockchip_usb
 wifi.supplicant_scan_interval=15
 ro.factory.tool=0
 #set default lcd density to Rockchip tablet
-ro.sf.lcd_density=160
+ro.sf.lcd_density=320
 ro.adb.secure =0
