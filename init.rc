@@ -536,7 +536,7 @@ service servicemanager /system/bin/servicemanager
 
 service displayd /system/bin/displayd
     class main
-    socket displayd stream 0660 root system
+    socket displayd stream 0760 system system
 
 service vold /system/bin/vold
     class core
