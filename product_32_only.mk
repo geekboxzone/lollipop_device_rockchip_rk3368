@@ -14,14 +14,14 @@
 
 #
 # This file is the build configuration that is shared by all products
-# based on the rk3368 device
+# based on the rk3368_32 device
 #
 PRODUCT_RUNTIMES := runtime_libart_default
 
-$(call inherit-product, device/rockchip/rk3368/device.mk)
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.zygote=zygote32
+PRODUCT_COPY_FILES += \
+    system/core/rootdir/init.zygote32.rc:root/init.zygote32.rc
 
-ifeq ($(strip $(TARGET_PRODUCT)), rk3368_32)
-$(call inherit-product, device/rockchip/rk3368/product_32_only.mk)
-else
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-endif
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.carrier=unknown

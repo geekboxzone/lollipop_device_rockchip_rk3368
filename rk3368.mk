@@ -20,7 +20,7 @@
 # product configuration (apps). Except for a few implementation
 # details, it only fundamentally contains two inherit-product
 # lines, aosp and flounder, hence its name.
-#
+
 include device/rockchip/rk3368/BoardConfig.mk
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/rockchip/rk3368/product.mk)
