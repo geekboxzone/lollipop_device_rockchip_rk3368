@@ -26,6 +26,8 @@ include device/rockchip/rk3368/BoardConfig.mk
 $(call inherit-product, device/rockchip/rk3368/product.mk)
 $(call inherit-product, device/rockchip/common/device.mk)
 
+PRODUCT_CHARACTERISTICS := tablet
+
 # Live Wallpapers
 PRODUCT_PACKAGES += \
         rild \
