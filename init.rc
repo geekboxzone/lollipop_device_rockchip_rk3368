@@ -535,7 +535,7 @@ service servicemanager /system/bin/servicemanager
     onrestart restart drm
 
 service displayd /system/bin/displayd
-    class main
+    class core
     socket displayd stream 0760 system system
 
 service vold /system/bin/vold
