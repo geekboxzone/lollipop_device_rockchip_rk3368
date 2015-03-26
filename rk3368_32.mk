@@ -18,4 +18,4 @@ $(call inherit-product, $(LOCAL_PATH)/rk3368.mk)
 
 PRODUCT_NAME := rk3368_32
 PRODUCT_DEVICE := rk3368_32
-PRODUCT_MODEL := 32-bit AOSP on rk3368
+PRODUCT_MODEL := rk3368-P9

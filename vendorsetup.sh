@@ -1,3 +1,4 @@
 add_lunch_combo rk3368-userdebug
 add_lunch_combo rk3368_32-userdebug
+add_lunch_combo rk3368_box-userdebug
 add_lunch_combo rk3368_64-userdebug

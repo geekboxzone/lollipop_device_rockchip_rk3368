@@ -14,9 +14,8 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rk3368.mk \
-    $(LOCAL_DIR)/rk3368_64.mk \
-    $(LOCAL_DIR)/rk3368_32.mk \
-    $(LOCAL_DIR)/rk3368_box.mk \
-    $(LOCAL_DIR)/rk3368_64_only.mk
+$(call inherit-product, $(LOCAL_PATH)/rk3368.mk)
+
+PRODUCT_NAME := rk3368_box
+PRODUCT_DEVICE := rk3368_box
+PRODUCT_MODEL := rk3368-box

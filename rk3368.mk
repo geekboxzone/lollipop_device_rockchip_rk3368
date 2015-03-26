@@ -15,11 +15,11 @@
 
 #
 # This file is the build configuration for an aosp Android
-# build for flounder hardware. This cleanly combines a set of
+# build for rockchip rk3368 hardware. This cleanly combines a set of
 # device-specific aspects (drivers) with a device-agnostic
 # product configuration (apps). Except for a few implementation
 # details, it only fundamentally contains two inherit-product
-# lines, aosp and flounder, hence its name.
+# lines, aosp and rk3368, hence its name.
 
 include device/rockchip/rk3368/BoardConfig.mk
 # Inherit from those products. Most specific first.

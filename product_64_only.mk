@@ -14,7 +14,7 @@
 
 #
 # This file is the build configuration that is shared by all products
-# based on the flounder device that want only a 64-bit zygote (no
+# based on the rockchip rk3368 device that want only a 64-bit zygote (no
 # 32-bit app support)
 #
 
