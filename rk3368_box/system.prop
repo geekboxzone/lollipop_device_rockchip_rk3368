@@ -40,6 +40,6 @@ persist.sys.timezone=
 ro.product.usbfactory=rockchip_usb
 wifi.supplicant_scan_interval=15
 ro.factory.tool=0
-#set default lcd density for rk3368-P9 tablet
-ro.sf.lcd_density=240
+#set default lcd density for rk3368 box product
+ro.sf.lcd_density=160
 ro.adb.secure =0
