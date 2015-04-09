@@ -29,7 +29,9 @@ PRODUCT_PACKAGES += \
 #endif
 
 PRODUCT_COPY_FILES += \
-    device/rockchip/rk3368/init.rc:root/init.rc
+    device/rockchip/rk3368/init.rc:root/init.rc	\
+    $(LOCAL_PATH)/fstab.rk30board.bootmode.unknown:root/fstab.rk30board.bootmode.unknown \
+    $(LOCAL_PATH)/fstab.rk30board.bootmode.emmc:root/fstab.rk30board.bootmode.emmc
 
 # setup dalvik vm configs.
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
