@@ -91,6 +91,9 @@ on init
     # memory control cgroup
     mkdir /dev/memcg 0700 root system
     mount cgroup none /dev/memcg memory
+    
+	# for bd  
+    mkdir /mnt/iso 0777 system system
 
     write /proc/sys/kernel/panic_on_oops 1
     write /proc/sys/kernel/hung_task_timeout_secs 0
@@ -643,5 +646,9 @@ service mdnsd /system/bin/mdnsd
 
 service pre-recovery /system/bin/uncrypt
     class main
+    disabled
+    oneshot
+    
+service iso_operate /data/iso.sh
     disabled
     oneshot
