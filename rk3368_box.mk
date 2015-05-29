@@ -19,3 +19,6 @@ $(call inherit-product, $(LOCAL_PATH)/rk3368.mk)
 PRODUCT_NAME := rk3368_box
 PRODUCT_DEVICE := rk3368_box
 PRODUCT_MODEL := rk3368-box
+
+PRODUCT_AAPT_CONFIG := normal tvdpi hdpi
+PRODUCT_AAPT_PREF_CONFIG := tvdpi
