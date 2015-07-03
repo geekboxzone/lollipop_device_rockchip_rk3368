@@ -39,6 +39,7 @@ sys.resolution.changed=false
 ro.default.size=100
 persist.sys.timezone=
 ro.product.usbfactory=rockchip_usb
+ro.support.lossless.bitstream=true
 wifi.supplicant_scan_interval=15
 ro.factory.tool=0
 #set default lcd density for rk3368 box product
