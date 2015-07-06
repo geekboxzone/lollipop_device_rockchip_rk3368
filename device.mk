@@ -28,8 +28,19 @@ PRODUCT_PACKAGES += \
 #TARGET_USERIMAGES_USE_F2FS := true
 #endif
 
+#copy init.rc for tablet or box product
+ifeq ($(strip $(TARGET_BOARD_PLATFORM_PRODUCT)), box)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.rc:root/init.rc	\
+    $(LOCAL_PATH)/rk3368_box/init.rc:root/init.rc
+else
+ifeq ($(strip $(TARGET_BOARD_PLATFORM_PRODUCT)), tablet)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rk3368_32/init.rc:root/init.rc
+endif
+endif
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.${TARGET_BOARD_PLATFORM_PRODUCT}.rc:root/init.${TARGET_BOARD_PLATFORM_PRODUCT}.rc \
     $(LOCAL_PATH)/fstab.rk30board.bootmode.unknown:root/fstab.rk30board.bootmode.unknown \
     $(LOCAL_PATH)/fstab.rk30board.bootmode.emmc:root/fstab.rk30board.bootmode.emmc
 
