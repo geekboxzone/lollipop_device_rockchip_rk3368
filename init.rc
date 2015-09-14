@@ -648,7 +648,8 @@ service pre-recovery /system/bin/uncrypt
     class main
     disabled
     oneshot
-    
-service iso_operate /data/iso.sh
+
+service iso_operate /system/bin/iso
+    class main
     disabled
     oneshot
