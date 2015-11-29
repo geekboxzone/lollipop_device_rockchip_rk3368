@@ -36,6 +36,7 @@ ro.rk.systembar.tabletUI=false
 ro.rk.LowBatteryBrightness=true
 ro.tether.denied=false
 sys.resolution.changed=false
+sys.status.hidebar_enable=true
 ro.default.size=100
 persist.sys.timezone=
 ro.product.usbfactory=rockchip_usb
