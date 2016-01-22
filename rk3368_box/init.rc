@@ -604,12 +604,6 @@ service flash_recovery /system/bin/install-recovery.sh
     seclabel u:r:install_recovery:s0
     oneshot
 
-service reboot2linux /system/bin/reboot2linux.sh
-    class main
-    seclabel u:r:install_recovery:s0
-    disabled
-    oneshot
-
 service racoon /system/bin/racoon
     class main
     socket racoon stream 600 system system
