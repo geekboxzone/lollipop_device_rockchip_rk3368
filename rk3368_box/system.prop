@@ -12,6 +12,7 @@ rild.libpath=/system/lib/libril-rk29-dataonly.so
 rild.libargs=-d /dev/ttyACM0
 persist.tegra.nvmmlite = 1
 persist.sys.boot.check=false
+persist.sys.fan_mode=0
 ro.audio.monitorOrientation=true
 
 #NFC
